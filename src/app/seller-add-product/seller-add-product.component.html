@@ -1,0 +1,14 @@
+<div class="seller-auth">
+    <h1 style="text-align: center;">Seller Add Product</h1>
+    <h3 style="text-align: center; color:green;">{{addProductMessage}}</h3>
+    <form #sellerAddProduct="ngForm" (ngSubmit)="submit(sellerAddProduct.value)" class="common-form">
+        <input class="form-input" type="text" name="name" placeholder="Enter produc name" ngModel />
+        <input class="form-input" type="text" name="price" placeholder="Enter product price" ngModel />
+        <input class="form-input" type="text" name="color" placeholder="Enter product color" ngModel />
+        <input class="form-input" type="text" name="category" placeholder="Enter product category" ngModel />
+        <textarea class="form-input" type="text" name="description" placeholder="Enter product description" ngModel></textarea>
+        <input class="form-input" type="text" name="url" placeholder="Enter product URL" ngModel />
+        <button class="form-button">Save</button>
+       
+    </form>
+</div>

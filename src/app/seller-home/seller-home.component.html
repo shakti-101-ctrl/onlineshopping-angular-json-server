@@ -1,0 +1,35 @@
+<div>
+    <h1>Product Details</h1>
+    <h3>{{deleteMessage}}</h3>
+    <table>
+        <thead>
+            <tr>
+                
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Color</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of productList">
+               
+                <td><img src={{row.url}}/></td>
+                <td>{{row.name}}</td>
+                <td>{{row.price}}</td>
+                <td>{{row.color}}</td>
+                <td>{{row.category}}</td>
+                <td>{{row.description}}</td>
+                <td>
+                    <button (click)="deleteProduct(row.id)">Delete</button>
+                    <a routerLink='/seller-update-product/{{row.id}}' style="text-decoration: none;margin-left: 2px;">Upadate</a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

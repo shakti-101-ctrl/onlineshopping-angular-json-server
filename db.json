@@ -1,0 +1,54 @@
+{
+  "seller": [
+    {
+      "name": "Shakti Brata Naik",
+      "password": "abc@123",
+      "email": "shakti@seller.com",
+      "id": 1
+    },
+    {
+      "name": "Mina",
+      "password": "1233",
+      "email": "shaktibrata17@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Shakti",
+      "password": "1211",
+      "email": "shaktibrata17@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "admin",
+      "password": "sas",
+      "email": "shaktibrata17@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "name": "i phone 14",
+      "price": "50000",
+      "color": "black",
+      "category": "Mobile",
+      "description": "Apple product",
+      "url": "https://www.pexels.com/photo/selective-focus-photography-of-person-holding-turned-on-smartphone-1092644/",
+      "id": 1
+    },
+    {
+      "name": "i phone 12",
+      "price": "230",
+      "color": "White",
+      "category": "Mobile",
+      "description": "Apple product",
+      "url": "https://www.pexels.com/photo/selective-focus-photography-of-person-holding-turned-on-smartphone-1092644/",
+      "id": 2
+    }
+  ]
+}
