@@ -34,21 +34,57 @@
   "products": [
     {
       "name": "i phone 14",
-      "price": "50000",
+      "price": "10000",
       "color": "black",
       "category": "Mobile",
-      "description": "Apple product",
-      "url": "https://www.pexels.com/photo/selective-focus-photography-of-person-holding-turned-on-smartphone-1092644/",
+      "description": "It an iphone new model",
+      "url": "https://cdn.pickr.com.au/wp-content/uploads/2022/10/apple-iphone-14-pro-max-review-2022-12-1024x549.jpg",
       "id": 1
     },
     {
-      "name": "i phone 12",
-      "price": "230",
+      "name": "i phone 13",
+      "price": "100000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "Nice product",
+      "url": "https://cdn.pickr.com.au/wp-content/uploads/2022/10/apple-iphone-14-pro-max-review-2022-13-1024x507.jpg",
+      "id": 2
+    },
+    {
+      "name": "i phone 14",
+      "price": "",
       "color": "White",
       "category": "Mobile",
-      "description": "Apple product",
-      "url": "https://www.pexels.com/photo/selective-focus-photography-of-person-holding-turned-on-smartphone-1092644/",
-      "id": 2
+      "description": "asxsds",
+      "url": "https://cdn.pickr.com.au/wp-content/uploads/2022/10/apple-iphone-14-pro-max-review-2022-01-1024x590.jpg",
+      "id": 3
+    },
+    {
+      "name": "laptop",
+      "price": "30000",
+      "color": "Black",
+      "category": "laptop",
+      "description": "here is a laptop",
+      "url": "https://www.pngmart.com/files/7/Dell-Laptop-PNG-Free-Download.png",
+      "id": 4
+    },
+    {
+      "name": "Laptop",
+      "price": "70000",
+      "color": "White",
+      "category": "Laptop",
+      "description": "hp product",
+      "url": "https://www.pngmart.com/files/16/Portable-Laptop-Top-View-PNG-File.png",
+      "id": 5
+    },
+    {
+      "name": "Dell laptop",
+      "price": "800000",
+      "color": "White",
+      "category": "Laptop",
+      "description": "Dell laptop",
+      "url": "https://www.pngmart.com/files/16/Portable-Laptop-Top-View-Transparent-Background.png",
+      "id": 6
     }
   ]
 }

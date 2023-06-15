@@ -29,4 +29,16 @@ export class ProductService {
   {
     return this.http.put<Product>(`http://localhost:3000/products/${product.id}`,product);
   }
+  getProductforslide()
+  {
+     return this.http.get<Product[]>("http://localhost:3000/products?_limit=5");
+  }
+  tendyProducts()
+  {
+     return this.http.get<Product[]>("http://localhost:3000/products?_limit=8");
+  }
+  searchProducts(query : string)
+  {
+     return this.http.get<Product[]>(`http://localhost:3000/products?_q=${query}`);
+  }
 }

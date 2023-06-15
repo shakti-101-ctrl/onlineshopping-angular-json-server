@@ -1,1 +1,33 @@
-<p>home works!</p>
+<div class="container">
+    <div class="row">
+        <ngb-carousel *ngIf="popuplarProduct">
+            <ng-template *ngFor="let item of popuplarProduct" ngbSlide>
+                <div class="picsum-img-wrapper" style="background-color: silver;">
+                    <img src="{{item.url}}" alt="Random first slide" width="100%"/>
+                </div>
+                <div class="carousel-caption">
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </ng-template>
+           
+        </ngb-carousel>
+    </div>
+    <div style="margin-top: 5px; text-align: center;">
+        <h3>Tendy Products</h3>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-md-3" *ngFor="let item of tendyProduts">
+        <div class="card">
+          <img src="{{item.url}}">
+          <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <p class="card-text">Price: {{item.price}}</p>
+            <p class="card-text">Color:{{item.color}}</p>
+            <button class="btn btn-primary">View Details</button>
+            <button class="btn btn-primary" style="margin-left: 2px;">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
