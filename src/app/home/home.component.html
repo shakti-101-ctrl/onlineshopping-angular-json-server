@@ -24,8 +24,8 @@
             <h5 class="card-title">{{item.name}}</h5>
             <p class="card-text">Price: {{item.price}}</p>
             <p class="card-text">Color:{{item.color}}</p>
-            <button class="btn btn-primary">View Details</button>
-            <button class="btn btn-primary" style="margin-left: 2px;">Add to Cart</button>
+            <a routerLink="/details/{{item.id}}" style="text-decoration: none;">View Details</a> | 
+            <a href="#" style="text-decoration: none;">Add to Cart</a>
           </div>
         </div>
       </div>

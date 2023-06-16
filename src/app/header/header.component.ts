@@ -59,13 +59,17 @@ export class HeaderComponent implements OnInit {
         }  
         
       });
-    }
-    
-   
+    }     
   }
 
   clearSearch()
   {
     this.searchSresult = undefined;
+  }
+
+  submitSearch(value: string)
+  {
+    console.warn(value);
+    this.route.navigate([`search/${value}`]);
   }
 }

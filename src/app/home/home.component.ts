@@ -10,6 +10,7 @@ import { Product } from '../data-type';
 export class HomeComponent implements OnInit {
   popuplarProduct : undefined | Product[]
   tendyProduts :undefined | Product[]
+  activeRoute: any;
 
   constructor(private product: ProductService) { }
   ngOnInit(): void {
@@ -22,7 +23,7 @@ export class HomeComponent implements OnInit {
     {
       this.tendyProduts = data;
     });
-    
   }
+ 
 
 }
