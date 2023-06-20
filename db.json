@@ -86,5 +86,43 @@
       "url": "https://www.pngmart.com/files/16/Portable-Laptop-Top-View-Transparent-Background.png",
       "id": 6
     }
+  ],
+  "users": [
+    {
+      "name": "shakti brata naik",
+      "email": "shaktibrata17@gmail.com",
+      "password": "asdf",
+      "id": 1
+    },
+    {
+      "name": "shaktibrata Naik",
+      "email": "shaktibrata17@gmail.com",
+      "password": "111111",
+      "id": 2
+    },
+    {
+      "name": "shaktibrata Naik",
+      "email": "shaktibrata17@gmail.com",
+      "password": "11111",
+      "id": 3
+    },
+    {
+      "name": "shaktibrata Naik",
+      "email": "shaktibrata17@gmail.com",
+      "password": "111111",
+      "id": 4
+    },
+    {
+      "name": "shaktibrata Naik",
+      "email": "shaktibrata17@gmail.com",
+      "password": "1111111",
+      "id": 5
+    },
+    {
+      "name": "Sima",
+      "email": "sima@gmail.com",
+      "password": "1234",
+      "id": 6
+    }
   ]
 }
