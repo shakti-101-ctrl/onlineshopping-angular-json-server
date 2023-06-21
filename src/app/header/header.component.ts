@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { Product } from '../data-type';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,6 +13,7 @@ export class HeaderComponent implements OnInit {
   sellerName: string = '';
   userName: string = '';
   searchSresult :undefined | Product[];
+  cartItem =0;
   constructor(private route: Router , private product : ProductService) { }
 
   ngOnInit(): void {
@@ -47,6 +49,17 @@ export class HeaderComponent implements OnInit {
         }  
         
       }
+    });
+
+    let cartData = localStorage.getItem('localCart');
+    if(cartData)
+    {
+      this.cartItem = JSON.parse(cartData).length;
+    }
+
+    this.product.cartData.subscribe((items)=>
+    {
+      this.cartItem = items.length;
     });
   }
 
