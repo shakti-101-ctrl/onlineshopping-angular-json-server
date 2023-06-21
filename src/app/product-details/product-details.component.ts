@@ -3,6 +3,7 @@ import { Product } from '../data-type';
 import { ProductService } from '../services/product.service';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -30,6 +31,23 @@ export class ProductDetailsComponent implements OnInit {
     else if(this.productQuantity>1 && choice==='min')
     {
       this.productQuantity --;
+    }
+  }
+
+  addToCart()
+  {
+    if(this.productDetails)
+    {
+      this.productDetails.quantity = this.productQuantity;
+      if(!localStorage.getItem('user'))
+      {
+        console.warn(this.productDetails);
+        this.product.localAddToCart(this.productDetails);
+      }
+      else
+      {
+        console.warn('else');
+      }
     }
   }
 
