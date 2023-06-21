@@ -32,6 +32,7 @@
 
         <div class="user-login" *ngIf="showLogin">
             <h1 class="user-login">User Login</h1>
+            <p class="invald-credentials">{{loginFiledMessage}}</p>
             <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
                 <input 
                     class="form-input" 
@@ -39,16 +40,24 @@
                     name="email"
                     placeholder="Enter Email"
                     ngModel 
+                    #email = "ngModel"
+                    required
+                    email
                 />
+                <p class="invalid-input"><span *ngIf="email.invalid && email.touched">This field is required</span></p>
                 <input 
                 class="form-input" 
                 type="password" 
                 name="password" 
-                 
                 placeholder="Enter Password"
                 ngModel 
+                #password ="ngModel"
+                required
+
+                
             />
-                <button class="form-button">Login</button>
+            <p class="invalid-input"><span *ngIf="password.invalid && password.touched">This field is required</span></p>
+                <button class="form-button" [disabled]="userLogin.invalid">Login</button>
                 <p>New user ? <a style="cursor: pointer;" (click)="openSignup()">Register</a> here</p>
             </form>
 

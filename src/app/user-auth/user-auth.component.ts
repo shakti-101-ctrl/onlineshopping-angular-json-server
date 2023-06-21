@@ -9,6 +9,7 @@ import { UserService } from '../services/user.service';
 })
 export class UserAuthComponent implements OnInit {
   showLogin : boolean = false;
+  loginFiledMessage : string ="";
   constructor(private user: UserService) { }
 
   ngOnInit(): void {
@@ -21,6 +22,14 @@ export class UserAuthComponent implements OnInit {
   login(data : Login) : void
   {
     this.user.userLogin(data);
+    this.user.isvalidUserAuth.subscribe((result)=>
+    {
+      if(result)
+      {
+        this.loginFiledMessage ="Invalid user id and password";
+      }
+     
+    });
     
   }
   openLogin()

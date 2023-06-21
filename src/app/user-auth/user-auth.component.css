@@ -21,3 +21,19 @@
 .error p{
     color: red;
 }
+
+.invalid-input
+{
+    color: red;
+    font-size: 12px;
+    margin-top: -20px;
+    margin-left: 0px;
+}
+button:disabled
+{
+    cursor: not-allowed;
+}
+.invald-credentials
+{
+    color: red;
+}
