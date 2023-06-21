@@ -36,7 +36,7 @@ export class HeaderComponent implements OnInit {
         {
           console.warn("in user");
           let userStore = localStorage.getItem('user');
-          let userData = userStore && JSON.parse(userStore);
+          let userData = userStore && JSON.parse(userStore)[0];
           console.warn(userStore);
           this.userName = userData.name;
           console.warn(userData.name);

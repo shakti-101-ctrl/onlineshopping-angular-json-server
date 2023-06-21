@@ -1,11 +1,11 @@
-.user-login,.login
+.user-signup,.login
 {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 80px;
     color: blueviolet;
 }
-.user-login h1, .login h1{
+.user-signup h1, .login h1{
     margin-top: 50px;
     margin-bottom: 80px;
     color: blueviolet;
