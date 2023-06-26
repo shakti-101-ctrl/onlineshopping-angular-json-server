@@ -124,5 +124,31 @@
       "password": "1234",
       "id": 6
     }
+  ],
+  "cart": [
+    {
+      "name": "i phone 14",
+      "price": "10000",
+      "color": "black",
+      "category": "Mobile",
+      "description": "It an iphone new model",
+      "url": "https://cdn.pickr.com.au/wp-content/uploads/2022/10/apple-iphone-14-pro-max-review-2022-12-1024x549.jpg",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 1
+    },
+    {
+      "name": "Dell laptop",
+      "price": "800000",
+      "color": "White",
+      "category": "Laptop",
+      "description": "Dell laptop",
+      "url": "https://www.pngmart.com/files/16/Portable-Laptop-Top-View-Transparent-Background.png",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 6,
+      "id": 2
+    }
   ]
 }
